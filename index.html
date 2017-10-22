@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+
+
+<body>
+
+ <h1 class="quizHeader">WW2 TRIVIA GAME</h1>
+  <br>
+  <!-- this was my placeholder for my timer. -->
+  <div id="show-timer"></div>
+  <br>
+	<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1.Who is the general known as the Desert Fox?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">Erwin Rommel</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>George Patton</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Dwight D. Eisenhower</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Bernard Montgomery</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2. Who attacked Pearl Harbor?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>Nazi Germany</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">Japan</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>China</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>North Korea</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. Where did the D-day Invasion take place?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Germany</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">France</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Spain</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>England</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4. Who was the head of the Nazi Party?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Erwin Rommel</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">Adolf Hitler</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Albert speer</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Heinrich Himmler</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="assets/javascript/app.js"></script>
+</body>
+
+
+</html>
